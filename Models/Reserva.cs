@@ -25,7 +25,7 @@ namespace DesafioProjetoHospedagem.Models
             {
                 // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
                 // *IMPLEMENTE AQUI*
-                throw new ArgumentException($"A suíte tem capacidade para apenas {Suite.Capacidade}");
+                throw new ArgumentException($"A suíte tem capacidade para apenas {Suite.Capacidade} pessoas.");
             }
         }
 
@@ -52,7 +52,7 @@ namespace DesafioProjetoHospedagem.Models
             // *IMPLEMENTE AQUI*
             if (DiasReservados >= 10)
             {
-                decimal desconto = valor * 0.10m; // 10% de desconto
+                decimal desconto = valor * 0.10M; // 10% de desconto
                 valor -= desconto;
             }
 
